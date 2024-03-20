@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<style>
+body {background-color: green;}
+/* this is a comment */
+.div1 {
+  background-color: green;
+  opacity: 0.7;
+  color: aliceblue;
+}
+
+.div2 {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+</style>
+</head>
+<body style="background-color: lavender;">
+
+<h1>Multiple Styles Will Cascade into One</h1>
+<p>Here, the background color of the page is set with inline CSS, and also with an internal CSS, and also with an external CSS.</p>
+<p>Try experimenting by removing styles to see how the cascading stylesheets work (try removing the inline CSS first, then the internal, then the external).</p>
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:5px dotted DodgerBlue;">Hello World</h1>
+<h1 style="border:10px dashed Violet;">Hello World</h1>
+
+
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+<div class="div1">
+    This is first div
+</div>
+
+<div class="div2">This is the 2nd div</div>
+</body>
+</html>
