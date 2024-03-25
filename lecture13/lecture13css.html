@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.divauto {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+
+.diffMarg{
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+
+.div3 {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: orchid;
+}
+
+
+.div4 {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+</style>
+</head>
+<body>
+
+<h2>Use of margin: auto</h2>
+<p>You can set the margin property to auto to horizontally center the element within its container. The element will then take up the specified width, and the remaining space will be split equally between the left and right margins:</p>
+
+<div class="divauto">
+This div will be horizontally centered because it has margin: auto;
+</div>
+
+
+
+<h2>Using individual margin properties</h2>
+
+<div class="diffMarg">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+
+
+
+<h2>The margin shorthand property - 4 values</h2>
+
+<div class="div3">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+
+
+
+
+<h2>Use of the inherit value</h2>
+<p>Let the left margin be inherited from the parent element:</p>
+
+<div class="div4">
+<p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+</div>
+
+<div class="div4">
+    <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+    </div>
+
+    <div class="div4">
+        <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+
+<hr>
+
+</body>
+</html>
